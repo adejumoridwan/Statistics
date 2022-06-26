@@ -35,11 +35,11 @@ output: beamer_presentation
 
 ## 
 
-![Types of Data]("C:\Users\User\Documents\Statistics\types_of_data.png")
+![Types of Data]("C:\Users\User\Documents\Statistics\image\types_of_data.png")
 
 ## Rectangular or Structured Data
 
-![Diamonds Dataset](""C:\Users\User\Documents\Statistics\diamonds.png"")
+![Diamonds Dataset](""C:\Users\User\Documents\Statistics\image\diamonds.png"")
 
 ## Measures of Central Tendency
 
@@ -82,11 +82,11 @@ $Variance = s^2$
   - Second Quratile: Q2 (median)
   - Third Quratile: Q3
   
-  ![]("C:\Users\User\Documents\Statistics\interquartile range.png")
+  ![]("C:\Users\User\Documents\Statistics\image\interquartile range.png")
 
 ## Summary Statistics of the Diamond Data Set
 
-![Summary Statistics of the Diamond Data Set]("C:\Users\User\Documents\Statistics\summary.png")
+![Summary Statistics of the Diamond Data Set]("C:\Users\User\Documents\Statistics\image\summary.png")
 
 ## Graphical Repreentations of Data
 
@@ -98,26 +98,26 @@ $Variance = s^2$
 
 ## Bar Plot
 
-![Prices of Various cuts of diamonds]("C:\Users\User\Documents\Statistics\bar_plot.png")
+![Prices of Various cuts of diamonds]("C:\Users\User\Documents\Statistics\image\bar_plot.png")
 
 ## Histogram
 
-![Histogram showing the various cut of diamonds]("C:\Users\User\Documents\Statistics\histogram.png")
+![Histogram showing the various cut of diamonds]("C:\Users\User\Documents\Statistics\image\histogram.png")
 
 ## Density Plot
 
-![Density Plot of various diamond cut]("C:\Users\User\Documents\Statistics\density.png")
+![Density Plot of various diamond cut]("C:\Users\User\Documents\Statistics\image\density.png")
 
 ## Box Plot
 
-![Box plot of various diamond cut]("C:\Users\User\Documents\Statistics\boxplot.png")
+![Box plot of various diamond cut]("C:\Users\User\Documents\Statistics\image\boxplot.png")
 
 
 ## Scatter Plot
 
-![Scatter plot showing the relationship between carat and price ]("C:\Users\User\Documents\Statistics\scatterplot.png")
+![Scatter plot showing the relationship between carat and price ]("C:\Users\User\Documents\Statistics\image\scatterplot.png")
 
-
+# Probability and Probability Distributions
 
 
 
