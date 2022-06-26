@@ -1,7 +1,7 @@
 ---
 title: "Statistics"
 author: Adejumo Ridwan Suleiman
-date: March 22, 2005
+date: June 25 2022
 output: beamer_presentation
 ---
 
@@ -43,30 +43,79 @@ output: beamer_presentation
 
 ## Measures of Central Tendency
 
-* Mean
-* Median
-* Mode
-
-## Mean
+### Mean
 
 * Sum of all values of observations divided by the number of observations
 * Mathematically denoted as:  
   $\bar a = \dfrac{\sum_{i}^{n}x_{i}}{n}$
 * Sensitive to extreme or high values
 
-## Median
+### Median
 * Center of an ordered observations
 * Also known as the middle of the observations.
 * Not sensitive to extreme values
 
-## Mode
+### Mode
 * Observation with the highest number of occurence.
 
-## Measurement of Variation
-* Measures how far an observation is from the mean
-* Mathematically defined as:
-$s = \sqrt{\dfrac{\sum_{i}^{n}(x_{i}-\bar x)}{n}}$
+## Measures of Variation
 
+### Standard Deviation and Variance
+
+* Measures how far an observation is from the mean
+* Mathematically defined as:  
+$s = \sqrt{\dfrac{\sum_{i}^{n}(x_{i}-\bar x)}{n}}$
+* Variance is defined as the square of the standard deviation:  
+$Variance = s^2$
+
+### Range
+* Difference between the largest and smallest observations.
+* Sensitive to extreme values
+
+### Percentiles
+* Expressing the sorted observations in percentage
+* Not sensitive to extreme values
+
+## Interquartile Range
+* The interquartile range divides the observations into 4 equal part:
+  - First Quartile: Q1
+  - Second Quratile: Q2 (median)
+  - Third Quratile: Q3
+  
+  ![]("C:\Users\User\Documents\Statistics\interquartile range.png")
+
+## Summary Statistics of the Diamond Data Set
+
+![Summary Statistics of the Diamond Data Set]("C:\Users\User\Documents\Statistics\summary.png")
+
+## Graphical Repreentations of Data
+
+* Bar Plot
+* Histogram
+* Density Plot
+* Box Plot 
+* Scatter Plot
+
+## Bar Plot
+
+![Prices of Various cuts of diamonds]("C:\Users\User\Documents\Statistics\bar_plot.png")
+
+## Histogram
+
+![Histogram showing the various cut of diamonds]("C:\Users\User\Documents\Statistics\histogram.png")
+
+## Density Plot
+
+![Density Plot of various diamond cut]("C:\Users\User\Documents\Statistics\density.png")
+
+## Box Plot
+
+![Box plot of various diamond cut]("C:\Users\User\Documents\Statistics\boxplot.png")
+
+
+## Scatter Plot
+
+![Scatter plot showing the relationship between carat and price ]("C:\Users\User\Documents\Statistics\scatterplot.png")
 
 
 
