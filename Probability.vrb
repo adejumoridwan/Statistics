@@ -1,0 +1,22 @@
+\frametitle{Binomial Distribution}
+\protect\hypertarget{binomial-distribution}{}
+\begin{itemize}
+\tightlist
+\item
+  Unlike the Bernoulli Distribution, the binomial distribution has
+  \texttt{n} number of trials.
+\item
+  A distribution is said to be Binomial if the following are satisfied;
+
+  \begin{itemize}
+  \tightlist
+  \item
+    A trial with two outcomes and repeated \texttt{n} number of trials
+  \item
+    Each trial is independent
+  \item
+    A total numbers of \texttt{n} trials are conducted
+  \item
+    The probability of scuccess and failure is same for all trials.
+  \end{itemize}
+\end{itemize}
