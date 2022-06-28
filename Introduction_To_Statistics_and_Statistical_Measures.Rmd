@@ -1,0 +1,128 @@
+---
+title: "Introduction to Statistics and Statistical Measures"
+author: Adejumo Ridwan Suleiman
+date: June 25 2022
+output: beamer_presentation
+---
+
+## What is Statistics?
+
+* Statistics is simply the **Collection, Organizing and Analysing** of data.
+
+## Is Data Science Statistics in Disguise?
+
+* Unlike Statistics, Data Science is an interdisciplinary field consisting of **Mathematics, Statistics, Computer Science and Domain Knowledge**.
+
+## Types of Data
+
+* Data can be classified into two types  
+  - Based on **Measurement Scale**
+  - Based on **Time Period** 
+
+## Based on Measurement Scale
+* **Qualitative** Data  
+  - **Nominal** e.g sex
+  - **Ordinal** e.g temperature level; High, Medium and Low
+* **Quantitative** Data  
+  - **Ratio**  e.g weight
+  - **Interval** e.g temperature in degreee celsius
+
+## Based on Time Period
+* **Cross-Sectional** Data e.g number of viewers for different youtube genres in the year 2021
+* **Time Series** Data e.g number of viewers for Sport channels on youtube from the year 2014-Date.
+
+## 
+
+![Types of Data]("C:\Users\User\Documents\Statistics\image\types_of_data.png")
+
+## Rectangular or Structured Data
+
+![Diamonds Dataset](""C:\Users\User\Documents\Statistics\image\diamonds.png"")
+
+## Measures of Central Tendency
+
+### Mean
+
+* Sum of all values of observations divided by the number of observations
+* Mathematically denoted as:  
+  $\bar a = \dfrac{\sum_{i}^{n}x_{i}}{n}$
+* Sensitive to extreme or high values
+
+### Median
+* Center of an ordered observations
+* Also known as the middle of the observations.
+* Not sensitive to extreme values
+
+### Mode
+* Observation with the highest number of occurence.
+
+## Measures of Variation
+
+### Standard Deviation and Variance
+
+* Measures how far an observation is from the mean
+* Mathematically defined as:  
+$s = \sqrt{\dfrac{\sum_{i}^{n}(x_{i}-\bar x)^2}{n}}$
+* Variance is defined as the square of the standard deviation:  
+$Variance = s^2$
+
+### Range
+* Difference between the largest and smallest observations.
+* Sensitive to extreme values
+
+### Percentiles
+* Expressing the sorted observations in percentage
+* Not sensitive to extreme values
+
+## Interquartile Range
+* The interquartile range divides the observations into 4 equal part:
+  - First Quartile: Q1
+  - Second Quratile: Q2 (median)
+  - Third Quratile: Q3
+  
+  ![]("C:\Users\User\Documents\Statistics\image\interquartile range.png")
+
+## Summary Statistics of the Diamond Data Set
+
+![Summary Statistics of the Diamond Data Set]("C:\Users\User\Documents\Statistics\image\summary.png")
+
+## Graphical Repreentations of Data
+
+* Bar Plot
+* Histogram
+* Density Plot
+* Box Plot 
+* Scatter Plot
+
+## Bar Plot
+
+![Prices of Various cuts of diamonds]("C:\Users\User\Documents\Statistics\image\bar_plot.png")
+
+## Histogram
+
+![Histogram showing the various cut of diamonds]("C:\Users\User\Documents\Statistics\image\histogram.png")
+
+## Density Plot
+
+![Density Plot of various diamond cut]("C:\Users\User\Documents\Statistics\image\density.png")
+
+## Box Plot
+
+![Box plot of various diamond cut]("C:\Users\User\Documents\Statistics\image\boxplot.png")
+
+
+## Scatter Plot
+
+![Scatter plot showing the relationship between carat and price ]("C:\Users\User\Documents\Statistics\image\scatterplot.png")
+
+## Challenge
+
+* After marking 100 students exam scripts two students got above 90% while the remaining students got scores between 40% to 60%. What is the most appropriate measure of central tendency to use in this scenario and what's your view on the standard deviation given the scores of the two students were moderated.
+* If the median weight of DevNet members is 55kg, what is the 50th percentile and hence find the 2nd Quartile.
+* What is the best graph to use if I am interested in seeing how the weight of DevNet members is distributed.
+
+## References
+
+* *[Practical Statistics for Data Scientists by Peter Bruce and Andrew Bruce.](https://www.amazon.in/Practical-Statistics-Scientists-Peter-Bruce/dp/1491952962)*
+
+* *[The Diamond Dataset.](https://www.kaggle.com/datasets/shivam2503/diamonds)*
