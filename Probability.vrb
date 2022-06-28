@@ -1,22 +1,29 @@
-\frametitle{Binomial Distribution}
-\protect\hypertarget{binomial-distribution}{}
+\frametitle{Challenge}
+\protect\hypertarget{challenge}{}
 \begin{itemize}
 \tightlist
 \item
-  Unlike the Bernoulli Distribution, the binomial distribution has
-  \texttt{n} number of trials.
-\item
-  A distribution is said to be Binomial if the following are satisfied;
+  Use the table below to answer the following questions.
+\end{itemize}
 
-  \begin{itemize}
-  \tightlist
-  \item
-    A trial with two outcomes and repeated \texttt{n} number of trials
-  \item
-    Each trial is independent
-  \item
-    A total numbers of \texttt{n} trials are conducted
-  \item
-    The probability of success and failure is same for all trials.
-  \end{itemize}
+\begin{verbatim}
+## # A tibble: 5 x 2
+## # Groups:   cut [5]
+##   cut           n
+##   <ord>     <int>
+## 1 Fair       1610
+## 2 Good       4906
+## 3 Very Good 12082
+## 4 Premium   13791
+## 5 Ideal     21551
+\end{verbatim}
+
+\begin{itemize}
+\tightlist
+\item
+  Imagine you are to pick a diamond from a virtual box online, what is
+  the probability of you picking a \textbf{Premium} diamond?
+\item
+  If you are to pick two \textbf{Premium} diamonds what is the
+  probability?
 \end{itemize}

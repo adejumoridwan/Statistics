@@ -1,11 +1,11 @@
 ---
 title: "Probability and Probability Distribution"
 author: Adejumo Ridwan Suleiman
-date: June 25 2022
+date: "`r Sys.Date()`"
 output: beamer_presentation
 ---
 
-## What is probability
+## What is Probability
 
 * It is simply the study of uncertainty.
 * Example the possibility of raining, tossing a coin or rolling a die.
@@ -16,31 +16,41 @@ $Probability = \dfrac{\text{Number of Required outcomes}}{\text{Number of Possib
 
 ## Terms in Probability
 
-* Experiment: An uncertain situation e.g tossing a coin
-* Outcome: Result of a trial in an experiment.
-* Event: One or more outcome from a experiment
-* Sample Space: The collection of possible outcomes of an experiment.
+* **Experiment:** An uncertain situation e.g tossing a coin
+* **Outcome:** Result of a trial in an experiment.
+* **Event:** One or more outcome from a experiment
+* **Sample Space:** The collection of possible outcomes of an experiment.
 
 ## Random Variable
 
 * Outcome of an event expressed in numbers
-* For example in the coin toss experiment we can either have a head or tail which can be numerically expressed as 1 or 0 respectively.
-* Let's call a set containing these two numbers X where;
-`X = {1,0}`.
-* `X` represents the Random Variable
-* What's the random variable of a sixed face die?
+* For example in the coin toss experiment we can either have a **Head** or **Tail** which can be numerically expressed as **1** or **0** respectively.
+* Let's call a set containing these two numbers **X** where;  
+**X = {1,0}**.
+* **X** represents the Random Variable
+* What's the random variable of a Six face die?
 
 ## The Two Coin Toss Experiment
 
+![Tabular representation of the sample space of the two coin toss ]("C:\Users\User\Documents\Statistics\image\coin.png")
 
-* S = {HH,HT,TH,TT}  
+## The Two Coin Toss Experiment
+
+* **S = {HH,HT,TH,TT}** 
+
 $Probability = \dfrac{\text{Number of Required outcomes}}{\text{Number of Possible outcomes}}$
+
 * Number of possible outcomes = 4
 * Probability of getting a head in both coins is:
+
 $=\dfrac{\text{Number of Required outcomes(HH)}}{\text{Number of Possible outcomes(HH,HT,TH,TT)}}= \dfrac{1}{4}$
+
 * Probability of getting a head in the first coin and a tail in the second coin:  
+
 $=\dfrac{\text{Number of Required outcomes(HT)}}{\text{Number of Possible outcomes(HH,HT,TH,TT)}} = \dfrac{1}{4}$
+
 * Probability of getting a head and a tail in both coins.  
+
 $=\dfrac{\text{Number of Required outcomes(HT,TH)}}{\text{Number of Possible outcomes(HH,HT,TH,TT)}} = \dfrac{2}{4}$
 
 
@@ -50,24 +60,60 @@ $=\dfrac{\text{Number of Required outcomes(HT,TH)}}{\text{Number of Possible out
 
 ## The Two Die Experiment
 
-* S = {(1,1),(1,2),(1,3),...,(6,6)}  
+* **S = {(1,1),(1,2),(1,3),...,(6,6)}**  
+
 $Probability = \dfrac{\text{Number of Required outcomes}}{\text{Number of Possible outcomes}}$
+
 * Number of possible outcomes = 36
 * Probability of getting a `one` in both die:
+
 $=\dfrac{\text{Number of Required outcomes(1,1)}}{\text{Number of Possible outcomes}}= \dfrac{1}{36}$
+
 * Probability of getting a `one` in the first die and a `two` in the second die:
+
 $=\dfrac{\text{Number of Required outcomes(1,2)}}{\text{Number of Possible outcomes}} = \dfrac{1}{36}$
+
 * Probability of getting a one and a two: 
+
 $=\dfrac{\text{Number of Required outcomes(1,2) or (2,1)}}{\text{Number of Possible outcomes}} = \dfrac{2}{36}$
 
 ## The Two Die Experiment
 
 ![Probability Distribution of the two die experiment ]("C:\Users\User\Documents\Statistics\image\two_die.png")
 
+## The Candy Jar
+
+* A Candy Jar has 11 candies, **5 Green** candies, **2 Yellow** candies and **4 Red** candies. 
+1. If your  sibling wants a candy what is the probability of you picking a **Green** Candy.
+2. If your sibling **rejects** the Green candy, and decides he wants **Two Yellow** Candies what's the probability.
+3. If you want a **Green** and a **Red** Candy whats the probability of you picking.  
+*Note all these scenarios are in order*
+
+## The Candy Jar
+
+* Number of Candies = 11
+
+* $\text{Probability of Selecting Green}=\dfrac{5}{11}$
+
+* $\text{Probability of Selecting Yellow}=\dfrac{2}{11}$
+
+* $\text{Probability of Selecting Red}=\dfrac{4}{11}$
+
+## The Candy Jar
+
+1. Probability of Green Candy
+$=\dfrac{5}{11}$
+
+2. Probability of Two Yellow Candy given the Green Candy is returned
+$=\dfrac{2}{11}\times\dfrac{1}{10}=\dfrac{1}{55}$
+
+3. Probability of Green Candy and a Red Candy given no more Yellow Candy
+$=\dfrac{5}{9}\times\dfrac{4}{8}=\dfrac{5}{18}$
+
 ## Bernoulli Distribution
 
-* A single trial with only two possible outcomes is called as binomial distribution.
-* Example is a coin tossed once or a fight between me and Mayowa(DevNet) where the probability of I winning is 0.9 and him losing is 0.1.
+* A single trial with only two possible outcomes is called as Bernoulli distribution.
+* Example is a coin tossed once or a fight between me and Mayowa(DevNet) where the probability of I winning is **0.9** and him losing is **0.1.**
 
 ## Distribution of a Bernoulli Experiment
 
@@ -75,12 +121,12 @@ $=\dfrac{\text{Number of Required outcomes(1,2) or (2,1)}}{\text{Number of Possi
 
 ## Binomial Distribution
 
-* Unlike the Bernoulli Distribution, the binomial distribution has `n` number of trials.
+* Unlike the Bernoulli Distribution, the binomial distribution has **n** number of trials.
 * A distribution is said to be Binomial if the following are satisfied;
-  - A trial with two outcomes and repeated `n` number of trials
+  - A trial with two outcomes and repeated **n** number of trials
   - Each trial is independent 
-  - A total numbers of `n` trials are conducted
-  - The probability of success and failure is same for all trials.
+  - A total numbers of **n** trials are conducted
+  - The probability of **Success** and **Failure** is same for all trials.
   
 ## Distribution of a Binomial Experiment
 
@@ -89,7 +135,7 @@ $=\dfrac{\text{Number of Required outcomes(1,2) or (2,1)}}{\text{Number of Possi
 ## Normal Distribution
 
 * A distribution is said to be normally distributed if it satisfies the following conditions;
-  - The mean, median and mode of the distribution are the same.
+  - The **Mean, Median and Mode** of the distribution are the same.
   - The curve of the distribution is bell shaped
   - Half of the value are left of the center and the other half at the right.
   
@@ -99,10 +145,24 @@ $=\dfrac{\text{Number of Required outcomes(1,2) or (2,1)}}{\text{Number of Possi
 
 ## Central Limit Theorem
 
-* Regardless of the distribution of a variable's population, if we have a sufficiently large sample size, the mean and standard deviation of that variable will be normally distributed.
+* Regardless of the distribution of a variable's population, if we have a sufficiently large sample size, the mean and standard deviation of that variable will be approximately normally distributed.
+
+## Central Limit Theorem
+
+![Central Limit Theorem]("C:\Users\User\Documents\Statistics\image\clt.png")
 
 ## Challenge
 
-
+* Use the table below to answer the following questions.
+```{r,echo = FALSE,message=FALSE,warning=FALSE}
+ggplot2::diamonds |> 
+  dplyr::group_by(cut) |> 
+  dplyr::count(cut)
+```
+* Imagine you are to pick a diamond from a virtual box online, what is the probability of you picking a **Premium** diamond?
+* If you are to pick two **Premium** diamonds what is the probability?
 
 ## References
+
+* *[Basics of Probability for Data Science explained with examples in R](https://www.analyticsvidhya.com/blog/2017/02/basic-probability-data-science-with-examples/)*
+* *[Central Limit Theorem Simplified!](https://medium.com/@seema.singh/central-limit-theorem-simplified-46ddefeb13f3)*
