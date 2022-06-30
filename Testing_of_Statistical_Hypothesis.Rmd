@@ -77,7 +77,80 @@ library(tidyverse)
 cor.test(diamonds$price, diamonds$carat)
 ```
 
-## t-test
+## One-Sample t-test
+
+* Use to see if the mean of a sample from a population is equal to a specific value.
+* Let's assume someone argues with me that the mean price of diamonds is $6000 and I am not capable to get the mean price of all diamonds from the population.
+* Instead I take a random sample of 100 diamonds from the population and perform a t-test and compare it with the mean which we don't know if it is true or not.
+* We can state the **Null hypothesis** as:  
+*The mean price of diamonds is $6000*
+* We can state the **Alternative hypothesis** as:    
+*The mean price of diamonds is not $6000*
+
+## One-Sample t-test(continuation)
+
+
+```{r, echo=F, warning=F,message=F}
+set.seed(1999)
+t.test(diamonds[sample(nrow(diamonds), 100), ]$price, mu = 6000)
+```
+
+## One-Sample t.test(continuation)
+
+### What if I am to use the compare the actually mean price of diamonds or a value closer to that. Let's try 4000(the actual mean is 3900)
+```{r, echo=F, warning=F,message=F}
+set.seed(1999)
+t.test(diamonds[sample(nrow(diamonds), 100), ]$price, mu = 4000)
+```
+* Can you see the difference?
+
+## Two-Sample t-test 
+
+* This is like the one-sample t-test but is used to compare the means of two samples.
+* This time around I have 100 samples of diamonds from two different store.
+* I want to know if the mean price from these store are the same.
+* We can state our **Null Hypothesis** as:  
+*The average price of diamonds from Store A is the same as that of Store B*
+* The **Alternative Hypothesis** takes the form:  
+*The average price of diamonds from Store A is not the same as that of Store B*
+
+## Two-Sample t-test(continuation)
+
+```{r, echo=F, warning=F,message=F}
+set.seed(1999)
+Store_A = diamonds[sample(nrow(diamonds), 100), ]$price
+Store_B = diamonds[sample(nrow(diamonds), 100), ]$price
+
+t.test(Store_A, Store_B)
+```
+
+## Analysis of Variance (ANOVA)
+
+* Now I have four samples from four different Store, what do I do?
+* The **ANOVA** is used when you want to compare the mean of more than two samples.
+* We can state our **Null Hypothesis** as:  
+*The mean price of diamonds is the same across all Stores*
+* The **Alternative Hypothesis** takes the form:  
+*The average price of diamonds is not the same across all Stores*
+
+```{r, echo=F, warning=F,message=F}
+set.seed(1999)
+Store_A = data.frame(Price =diamonds[sample(nrow(diamonds), 100), ]$price,
+                     Store = rep(1,100))
+
+Store_B = data.frame(Price =diamonds[sample(nrow(diamonds), 100), ]$price,
+                     Store = rep(2,100))
+Store_C = data.frame(Price =diamonds[sample(nrow(diamonds), 100), ]$price,
+                     Store = rep(3,100))
+Store_D = data.frame(Price =diamonds[sample(nrow(diamonds), 100), ]$price,
+                     Store = rep(4,100))
+
+df <- rbind(Store_A,Store_B,Store_C,Store_D)
+
+aov_results <- aov(df$Price ~ df$Store)
+summary(aov_results)
+```
+
 
 
 
